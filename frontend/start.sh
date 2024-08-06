@@ -1,0 +1,3 @@
+#!/bin/bash
+
+next start

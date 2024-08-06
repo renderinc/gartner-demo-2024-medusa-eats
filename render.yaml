@@ -31,8 +31,8 @@ services:
     name: medusa-frontend
     env: node
     plan: starter
-    buildCommand: yarn; yarn build
-    startCommand: yarn start
+    buildCommand: cd backend && bash ./build.sh
+    startCommand: cd backend && bash ./start.sh
     envVars:
     - key: NODE_ENV
       value: production
@@ -43,8 +43,8 @@ services:
     previewPlan: starter
     name: gartner-backend
     env: node
-    buildCommand: cd backend && yarn
-    startCommand: cd backend && export FRONTEND_URL="https://$FRONTEND_HOSTPORT" && yarn start
+    buildCommand: cd backend && bash ./build.sh
+    startCommand: cd backend && bash ./start.sh
     - key: FRONTEND_HOSTPORT
       fromService:
         name: medusa-frontend
