@@ -28,11 +28,13 @@ services:
 
   # front end
   - type: web
+    repo: https://github.com/renderinc/gartner-demo-2024-medusa-eats
+    rootDir: frontend
     name: medusa-frontend
     env: node
     plan: starter
-    buildCommand: cd backend && bash ./build.sh
-    startCommand: cd backend && bash ./start.sh
+    buildCommand: cd backend; bash ./build.sh
+    startCommand: cd backend; bash ./start.sh
     envVars:
     - key: NODE_ENV
       value: production
@@ -41,10 +43,12 @@ services:
   - type: web
     plan: starter plus
     previewPlan: starter
+    repo: https://github.com/renderinc/gartner-demo-2024-medusa-eats
+    rootDir: backend
     name: gartner-backend
     env: node
-    buildCommand: cd backend && bash ./build.sh
-    startCommand: cd backend && bash ./start.sh
+    buildCommand: cd backend; bash ./build.sh
+    startCommand: cd backend; bash ./start.sh
     - key: FRONTEND_HOSTPORT
       fromService:
         name: medusa-frontend
