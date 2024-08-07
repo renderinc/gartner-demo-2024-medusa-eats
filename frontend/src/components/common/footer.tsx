@@ -1,5 +1,4 @@
 import { Text } from "@medusajs/ui";
-import Image from "next/image";
 import Link from "next/link";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -15,7 +14,7 @@ export default function Footer() {
           href="https://medusajs.com/"
           className="flex gap-1 items-center hover:text-ui-bg-base-hover"
         >
-          <Image
+          <img
             src="/medusa-logo.svg"
             alt="Medusa"
             className="h-4"

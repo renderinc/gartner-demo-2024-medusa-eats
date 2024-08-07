@@ -7,7 +7,6 @@ import {
 } from "@frontend/lib/data";
 import { ProductDTO, ProductVariantDTO } from "@medusajs/types";
 import { Heading, Table, Text } from "@medusajs/ui";
-import Image from "next/image";
 
 export default async function MenuPage() {
   const user = await retrieveUser();
@@ -69,7 +68,7 @@ export default async function MenuPage() {
                   <Table.Row key={product.id}>
                     <Table.Cell>
                       {product.thumbnail && (
-                        <Image
+                        <img
                           src={product.thumbnail}
                           className="h-12 w-12 rounded-md m-2"
                           width={48}

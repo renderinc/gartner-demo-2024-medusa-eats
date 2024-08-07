@@ -5,7 +5,6 @@ import {
   RestaurantDTO,
 } from "@frontend/lib/types";
 import { Badge, Text } from "@medusajs/ui";
-import Image from "next/image";
 
 const BACKEND_URL =
   process.env.BACKEND_URL ||
@@ -59,7 +58,7 @@ export default async function AccountBadge({
             Deliveries: <span className="font-bold">{deliveries?.length}</span>
           </Badge>
         </div>
-        <Image
+        <img
           src={
             "https://robohash.org/" +
             data.id +

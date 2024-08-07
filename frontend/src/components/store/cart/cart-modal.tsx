@@ -3,7 +3,6 @@
 import { removeItemFromCart } from "@frontend/lib/actions";
 import { XMark } from "@medusajs/icons";
 import { Button, Container, Heading, IconButton, Text } from "@medusajs/ui";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function CartModal({
@@ -51,7 +50,7 @@ function CartItem({ item }: { item: Record<string, any> }) {
 
   return (
     <div className="flex items-center gap-4">
-      <Image
+      <img
         src={item.product.thumbnail}
         alt={item.title}
         className="w-16 h-16 rounded-md"
