@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    // Disable the default Image Optimization API for this demo.
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "http",
