@@ -28,8 +28,8 @@ services:
     name: medusa-frontend
     env: node
     plan: starter
-    buildCommand: cd backend; bash ./build.sh
-    startCommand: cd backend; bash ./start.sh
+    buildCommand: cd frontend; bash ./build.sh
+    startCommand: cd frontend; bash ./start.sh
     envVars:
       - key: NODE_ENV
         value: production
