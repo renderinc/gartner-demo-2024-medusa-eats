@@ -26,8 +26,7 @@ services:
       mountPath: /var/lib/redis
       sizeGB: 2 # optional
 
-  # front end
-  - type: web
+  - type: web   # front end
     repo: https://github.com/renderinc/gartner-demo-2024-medusa-eats
     rootDir: frontend
     name: medusa-frontend
@@ -39,8 +38,7 @@ services:
     - key: NODE_ENV
       value: production
 
-  # back end
-  - type: web
+  - type: web   # back end
     plan: starter plus
     previewPlan: starter
     repo: https://github.com/renderinc/gartner-demo-2024-medusa-eats
