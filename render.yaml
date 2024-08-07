@@ -24,7 +24,7 @@ services:
 
   - type: web   # front end
     repo: https://github.com/renderinc/gartner-demo-2024-medusa-eats
-    rootDir: frontend
+    rootDir: ./frontend
     name: medusa-frontend
     env: node
     plan: starter
@@ -38,7 +38,7 @@ services:
     plan: starter plus
     previewPlan: starter
     repo: https://github.com/renderinc/gartner-demo-2024-medusa-eats
-    rootDir: backend
+    rootDir: ./backend
     name: gartner-backend
     env: node
     buildCommand: cd backend; bash ./build.sh
