@@ -1,7 +1,6 @@
 import { retrieveCart, retrieveRestaurant } from "@frontend/lib/data";
 import { Container, Heading, Text } from "@medusajs/ui";
 import { cookies } from "next/headers";
-import Image from "next/image";
 
 export async function OrderSummary() {
   const cartId = cookies().get("_medusa_cart_id")?.value;
@@ -25,7 +24,7 @@ export async function OrderSummary() {
       <div className="flex gap-4 justify-between flex-wrap">
         {cart?.items?.map((item: any) => (
           <div key={item.id} className="flex items-center gap-4">
-            <Image
+            <img
               src={item.product.thumbnail}
               alt={item.title}
               className="w-16 h-16 rounded-md"

@@ -5,7 +5,6 @@ import { FlyingBox } from "@medusajs/icons";
 import { Text } from "@medusajs/ui";
 import type { Metadata } from "next";
 import { Link } from "next-view-transitions";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Medusa Eats",
@@ -32,7 +31,7 @@ export default async function RootLayout({
           href="https://medusajs.com/"
           className="flex gap-1 items-center txt-compact-small hover:text-ui-bg-base-hover"
         >
-          <Image
+          <img
             src="/medusa-logo.svg"
             alt="Medusa"
             className="h-8"

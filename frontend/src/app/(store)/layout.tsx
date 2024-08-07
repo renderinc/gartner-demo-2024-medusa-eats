@@ -6,7 +6,6 @@ import { FlyingBox, ShoppingBag } from "@medusajs/icons";
 import { IconButton, Text } from "@medusajs/ui";
 import type { Metadata } from "next";
 import { Link } from "next-view-transitions";
-import Image from "next/image";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
@@ -34,7 +33,7 @@ export default async function RootLayout({
           href="https://medusajs.com/"
           className="flex gap-1 items-center txt-compact-small hover:text-ui-bg-base-hover"
         >
-          <Image
+          <img
             src="/medusa-logo.svg"
             alt="Medusa"
             className="h-8"
