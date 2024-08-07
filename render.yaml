@@ -21,10 +21,6 @@ services:
     plan: pro            # Default: starter
     previewPlan: starter # Default: use the value for 'plan'
     maxmemoryPolicy: allkeys-lru # Default: allkeys-lru)
-    disk:
-      name: redis-data
-      mountPath: /var/lib/redis
-      sizeGB: 2 # optional
 
   - type: web   # front end
     repo: https://github.com/renderinc/gartner-demo-2024-medusa-eats
