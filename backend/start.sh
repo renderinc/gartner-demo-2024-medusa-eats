@@ -5,4 +5,4 @@ export DATABASE_URL=$DATABSE_URL
 export FRONTEND_URL=https://$FRONTEND_HOSTPORT
 export JWT_SECRET=secretdemo
 
-medusa start
+yarn run start

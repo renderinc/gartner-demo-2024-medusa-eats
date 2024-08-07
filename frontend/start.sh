@@ -1,3 +1,3 @@
 #!/bin/bash
 
-yarn start
+yarn run start

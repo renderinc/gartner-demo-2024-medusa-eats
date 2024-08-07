@@ -1,4 +1,4 @@
 #!/bin/bash
 
-yarn
-
+yarn install
+yarn run build
