@@ -31,7 +31,7 @@ export default async function RootLayout({
           href="https://medusajs.com/"
           className="flex gap-1 items-center txt-compact-small hover:text-ui-bg-base-hover"
         >
-          <Image
+          <img
             src="/medusa-logo.svg"
             alt="Medusa"
             className="h-8"
