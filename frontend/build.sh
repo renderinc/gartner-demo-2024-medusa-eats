@@ -1,3 +1,3 @@
 #!/bin/bash
 
-next build
+yarn build

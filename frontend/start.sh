@@ -1,3 +1,3 @@
 #!/bin/bash
 
-next start
+yarn start
