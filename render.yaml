@@ -4,14 +4,13 @@ databases:
     databaseName: medusa_db_ghqs
     user: medusa_db_ghqs_user
     region: virginia
+    plan: pro
     ipAllowList:
     - source: 0.0.0.0/0
       description: everywhere
     postgresMajorVersion: "16"
     highAvailability:
       enabled: true
-    readReplicas:
-    - name: medusa-db-replica
 services:
 - type: web
   name: pgAdmin-dpg-cqt5i4dsvqrc73d0j8vg-a
@@ -73,7 +72,6 @@ services:
     fromDatabase:
       name: medusa-db
       property: connectionString
-  - fromGroup: Medusa Eats Secrets
   region: virginia
   buildCommand: yarn install; yarn run build
   startCommand: yarn run start
@@ -91,7 +89,6 @@ services:
   envVars:
   - key: BACKEND_URL
     sync: false
-  - fromGroup: Medusa Eats Secrets
   region: virginia
   buildCommand: yarn install; yarn run build
   startCommand: yarn run start
